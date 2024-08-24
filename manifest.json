@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "My Go Links",
+  "version": "1.0",
+  "description": "Custom go links for Chrome.",
+  "permissions": ["webNavigation"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
