@@ -1,15 +1,22 @@
 const goLinks = {
   "calendar": "https://calendar.google.com",
+  "canvas": "https://canvas.ubc.ca/",
   "chat": "https://chatgpt.com/",
   "docs": "https://docs.google.com",
   "drive": "https://drive.google.com",
   "extensions": "chrome://extensions/",
   "github": "https://github.com/",
   "gmail": "https://mail.google.com/",
+  "go": "chrome://extensions/?id=obphcibpljohboodikbpckofphjdljog",
+  "hey": "https://app.hey.com/",
   "hn": "https://news.ycombinator.com/",
+  "ig": "https://www.instagram.com/",
+  "linkedin": "https://www.linkedin.com/feed/",
   "mail": "https://mail.google.com/",
   "notion": "https://www.notion.so/",
+  "stripe": "https://dashboard.stripe.com/payments",
   "workday": "https://wd10.myworkday.com/ubc/d/home.htmld",
+  "x": "https://x.com/home",
   "youtube": "https://www.youtube.com/feed/subscriptions",
 };
 
