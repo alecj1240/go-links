@@ -34,7 +34,7 @@ There are two ways to add or customize your Go Links:
 
 ### 1. Using the Extension UI
 
-![Extension UI](screenshot.png)
+<img src="screenshot.png" alt="Extension UI" width="300">
 
 - Click on the extension icon to open the popup interface.
 - Enter a shortcut and its corresponding URL in the input fields.
