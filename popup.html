@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Go Links</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      width: 350px;
+      padding: 24px;
+      background-color: #f8f5f2;
+      color: #4a4a4a;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      color: #3d3d3d;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 14px;
+      background-color: #ffffff;
+    }
+    button {
+      background-color: #c8a97e;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background-color 0.2s;
+    }
+    button:hover {
+      background-color: #b69468;
+    }
+    #linkList {
+      margin-top: 24px;
+    }
+    .link-item {
+      position: relative;
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .link-info {
+      margin-bottom: 8px;
+    }
+    .link-shortcut {
+      font-weight: 500;
+      color: #3d3d3d;
+      margin-bottom: 4px;
+    }
+    .link-url {
+      font-size: 12px;
+      color: #6b6b6b;
+      word-break: break-all;
+    }
+    .delete-btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: rgba(200, 169, 126, 0.2);
+      color: #a67c4e; /* Darker shade of the beige color */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      opacity: 0;
+      transition: opacity 0.2s, background-color 0.2s;
+    }
+    .link-item:hover .delete-btn {
+      opacity: 1;
+    }
+    .delete-btn:hover {
+      background-color: rgba(200, 169, 126, 0.4);
+      color: #8a6235; /* Even darker on hover */
+    }
+  </style>
+</head>
+<body>
+  <h1>My Go Links</h1>
+  <input type="text" id="shortcutInput" placeholder="Shortcut (e.g., 'yt')">
+  <input type="text" id="urlInput" placeholder="URL (e.g., 'https://youtube.com')">
+  <button id="addButton">Add Link</button>
+  <div id="linkList"></div>
+  <script src="constants.js" type="module"></script>
+  <script src="popup.js" type="module"></script>
+</body>
+</html>
