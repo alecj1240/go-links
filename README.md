@@ -2,13 +2,7 @@
 
 This is a personal Chrome extension for managing and using custom Go Links. Go Links are short, memorable URLs that redirect to longer, often-used web addresses. They're commonly used in tech companies to make navigation easier and quicker.
 
-For example, instead of typing out "https://calendar.google.com" every time you want to check your schedule, you can simply type "go/calendar" in your browser's address bar, and the extension will take you straight there!
-
-## Features
-
-- **Quick Access to Favorite Links**: Instead of remembering long URLs, use simple keywords to access your favorite websites.
-- **Customizable**: Add your own Go Links by editing the `goLinks` object in the code.
-- **Free and Private**: Unlike some services that charge for Go Links, this extension is completely free and private to you.
+For example, instead of typing out "https://calendar.google.com" every time you want to check your schedule, you can simply type `go/calendar` in your browser's address bar, and the extension will take you straight there!
 
 ### Example Go Links
 
@@ -36,15 +30,28 @@ For example, instead of typing out "https://calendar.google.com" every time you 
 
 ## Customizing Your Go Links
 
-To customize or add your own Go Links:
+There are two ways to add or customize your Go Links:
 
-1. Open the `background.js` file in the extension folder.
-2. Modify the `goLinks` object to include your own short links and their corresponding URLs.
+### 1. Using the Extension UI
+
+![Extension UI](screenshot.png)
+
+- Click on the extension icon to open the popup interface.
+- Enter a shortcut and its corresponding URL in the input fields.
+- Click the "Add Link" button to save the new Go Link.
+- To delete a link, hover over it and click the "X" that appears in the top-right corner.
+
+### 2. Editing the constants.js File
+
+You can also add default Go Links by editing the `constants.js` file:
+
+1. Open the `constants.js` file in the extension folder.
+2. Modify the `DEFAULT_GO_LINKS` object to include your own short links and their corresponding URLs.
 
 Example:
 
 ```javascript
-const goLinks = {
+export const DEFAULT_GO_LINKS = {
   "calendar": "https://calendar.google.com",
   "github": "https://github.com/",
   "mycustomlink": "https://example.com",
@@ -52,7 +59,7 @@ const goLinks = {
 };
 ```
 
-3. Save the changes, and click the refresh icon in `chrome://extensions/` and your new links will be active.
+3. Save the changes and reload the extension in `chrome://extensions/`.
 
 ## License
 
