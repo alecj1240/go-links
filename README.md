@@ -1,4 +1,4 @@
-# My Go Links Chrome Extension
+# Go Links Chrome Extension
 
 This is a personal Chrome extension for managing and using custom Go Links. Go Links are short, memorable URLs that redirect to longer, often-used web addresses. They're commonly used in tech companies to make navigation easier and quicker.
 
@@ -34,8 +34,6 @@ There are two ways to add or customize your Go Links:
 
 ### 1. Using the Extension UI
 
-<img src="screenshot.png" alt="Extension UI" width="300">
-
 - Click on the extension icon to open the popup interface.
 - Enter a shortcut and its corresponding URL in the input fields.
 - Click the "Add Link" button to save the new Go Link.
@@ -60,6 +58,16 @@ export const DEFAULT_GO_LINKS = {
 ```
 
 3. Save the changes and reload the extension in `chrome://extensions/`.
+
+## Publishing to the Chrome Web Store
+
+1. Provide your own extension icons and update `manifest.json` if you want custom branding.
+2. Ensure `manifest.json` includes the correct version number.
+3. Zip the extension directory (excluding development files like `README.md`).
+4. Upload the zip through the [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole/).
+5. Fill out the listing with a description and optional screenshots.
+
+The extension stores your go links using `chrome.storage.sync` which keeps data synced to your Google account. No data is sent to any third‑party servers.
 
 ## License
 

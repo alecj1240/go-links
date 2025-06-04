@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "go/link",
-  "version": "1.0",
-  "description": "Custom go links for Chrome.",
+  "name": "Go Links",
+  "version": "1.0.0",
+  "description": "Create and manage custom go links in Chrome.",
   "permissions": [
     "storage",
     "declarativeNetRequest"
